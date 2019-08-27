@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BubbleSort.cs" />
+    <Compile Include="QuickSort.cs" />
     <Compile Include="SortIntList.cs" />
     <Compile Include="ISort.cs" />
     <Compile Include="MergeSort.cs" />
