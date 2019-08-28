@@ -14,7 +14,7 @@ namespace SortingAlgorithms
         {
             if (items == null)
             {
-                throw new System.NullReferenceException("items has not been initialized. Set items to a list you would like sorted.");
+                throw new System.ArgumentException("Provided list of items is null. Provide a valid list to create an instance of the class.");
             }
 
             Items = items;
