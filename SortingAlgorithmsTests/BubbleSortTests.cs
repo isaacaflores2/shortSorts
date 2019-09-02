@@ -17,9 +17,8 @@ namespace SortingAlgorithms.Tests
         {
             List<int> items = new List<int> {3,2,5,1,6};            
             List<int> expectedItems = new List<int> { 1,2,3,5,6};
-            
-            BubbleSort bubbleSort = new BubbleSort(items);
-            items =  (List<int>) bubbleSort.Sort();
+                     
+            items =  (List<int>) BubbleSort.Sort(items);
             
             CollectionAssert.AreEqual(expectedItems, items);            
         }

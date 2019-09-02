@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace SortingAlgorithms
 {
-    public class BubbleSort : SortIntList
+    public static class BubbleSort
     {
+        public static IList<int> Items { get; set; }
 
-        public BubbleSort(IList<int> items) : base(items)
+        public static IList<int> Sort(IList<int> items)
         {
-        }
-        
-        public override IList<int> Sort()
-        {                     
+            Items = items;
             bool isSorted = false;
             while (!isSorted)
             {
@@ -23,7 +21,7 @@ namespace SortingAlgorithms
             return Items;
         }        
 
-        private bool bubble()
+        private static bool bubble()
         {
             bool result = true;
 
@@ -36,6 +34,13 @@ namespace SortingAlgorithms
                 }
             }
             return result;
+        }
+
+        private static void swap(int firstIndex, int secondIndex)
+        {
+            int temp = Items[firstIndex];
+            Items[firstIndex] = Items[secondIndex];
+            Items[secondIndex] = temp;
         }
     }
 }

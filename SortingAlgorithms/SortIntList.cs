@@ -16,10 +16,9 @@ namespace SortingAlgorithms
             {
                 throw new System.ArgumentException("Provided list of items is null. Provide a valid list to create an instance of the class.");
             }
-
             Items = items;
         }
-
+        
         public abstract IList<int> Sort();
 
         protected void swap(int firstIndex, int secondIndex)
